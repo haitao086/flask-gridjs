@@ -7,4 +7,4 @@ config = configparser.ConfigParser(allow_no_value=True)
 config.optionxform = str
 config.read_file(open('configs/settings.cfg', 'r'))
 for key in config['DEFAULT']:
-    app.config[d] = config['DEFAULT'][key]
+    app.config[key] = config['DEFAULT'][key]
